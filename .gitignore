@@ -11,9 +11,19 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Dependencies
+go.sum
 
 # Any chicken scratches file
 *test*
 *tbc*
+
+# Any keys
+*key*
+*pub*
+
+# Any misc files
+*.png
+
+# Any secrets
+*.yaml

@@ -1,0 +1,58 @@
+http:
+  listen_address: 'dummy-url.ie'
+  listen_port: '80'
+  secure: false
+  cors:
+    allowed_origins: ['*']
+compsocsso:
+  auth_url: 'https://dummy-url.ie/auth'
+  token_url: 'https://dummy-url.ie/token'
+  picture: 'https://dummy-url.ie/img.png'
+  friendly_name: 'CompSoc Memeber Single Sign-on'
+  description: "CompSoc members can log in via 'KeyCloak' to access the dashboard."
+  client_id: ''
+  client_secret: ''
+googlesso:
+  auth_url: 'https://accounts.google.com/o/oauth2/v2/auth'
+  token_url: 'https://oauth2.googleapis.com/token'
+  friendly_name: 'Society Single Sign-on'
+  description: "Societies can sign-in via Google Workspace to access the dashboard."
+  scope: ''
+  client_id: ''
+  client_secret: ''
+ldap:
+  url: 'ldap://127.0.0.1:10389'
+  dn: 'dc=compsoc,dc=ie'
+  bind_user: 'cn=admin,dc=compsoc,dc=ie'
+  bind_secret: 'EatMyShorts'
+  society_attributes:
+    - "cn"
+    - "givenname"
+    - "sn"
+    - "mail"
+    - "uid"
+  user_attributes:
+    - "cn"
+    - "givenname"
+    - "sn"
+    - "mail"
+    - "uid"
+    - "employeenumber"
+    - "homedirectory"
+smtp:
+  host: 'smtp.dummy-url.ie'
+  port: ''
+  username: ''
+  password: ''
+  account_address: 'accounts@dummy-url.ie'
+  dashboard_address: 'dashboard@dummy-url.ie'
+socsportal:
+  url: ''
+  single_method: ''
+  all_method: ''
+  password: ''
+  username: ''
+  search_by_option: ''
+jwt:
+  private_key_path: 'jwtRS256.key'
+  public_key_path: 'jwtRS256.pub'
